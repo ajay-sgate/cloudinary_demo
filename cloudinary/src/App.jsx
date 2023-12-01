@@ -28,11 +28,13 @@ function App() {
         </div>
       </div>
 
-      <div className='m-4'>
-        <img className='rounded-full border' src={image} alt={image}/>
-        <br/>
-        <a href={image} target='_blank'>Image Link</a>
-      </div>
+      {image &&
+        <div className='m-4'>
+          <img className='rounded-full border' src={image} alt={image} />
+          <br />
+          <a href={image} target='_blank'>Image Link</a>
+        </div>
+      }
     </>
   )
 }
